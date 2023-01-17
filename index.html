@@ -1,0 +1,32 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="upper-container">
+            <div id="upper-title">Metric/Imperial Unit Converstion</div>
+            <input type="number" id="input-number" min = "1" oninput="validity.valid||(value='');" >
+            <div id="btns-container">
+            <button id="convert-btn">Convert</button>
+            <button id="reset-btn">Reset</button>
+            </div>
+        </div>
+        <div id="bottom-container">
+            <div id="bottom-items">
+            <div id="length-container" class="results-container">
+                <div id="length-title" class="calc-title">Length (Meter/Feet)</div>
+                <div id="length-calcs" class="calcs"></div>
+            </div>
+            <div id="volume-container" class="results-container">
+                <div id="volume-title" class="calc-title">Volume (Liters/Gallons</div>
+                <div id="volume-calcs" class="calcs"></div>
+            </div>
+               <div id="mass-container" class="results-container">
+                <div id="mass-title" class="calc-title">Mass (Kilograms/Pounds)</div>
+                <div id="mass-calcs" class="calcs"></div>
+             </div>   
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
